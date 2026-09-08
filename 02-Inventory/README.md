@@ -1,1 +1,1 @@
-#Inventory Analytics - Inventory management and analytics exercises. 
+#02 - Inventory Analytics - Inventory management and analytics exercises. 

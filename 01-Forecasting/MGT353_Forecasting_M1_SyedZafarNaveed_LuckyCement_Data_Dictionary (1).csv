@@ -1,0 +1,15 @@
+Field,Definition,Unit,Classification,Source_logic_and_assumption
+Dataset_Disclosure,Mandatory synthetic-data disclosure,Text,Disclosure,Repeated in each record so exported data retain their classification
+Week_Start_Date,Monday of sales week,Date,Synthetic structure,156 consecutive weeks; 2023-10-09 to 2026-09-28
+Product_or_Category,Ordinary Portland Cement,Text,Real category / assumed scope,Company portfolio includes OPC; no specific brand mix claimed
+Location_or_Channel,Illustrative Karachi/Sindh dealer territory,Text,Assumed,"A territory, not whole-company sales"
+Actual_Demand_Tonnes,Observed dispatch/sales target,Tonnes/week,Synthetic,"Base 1,550 t/wk with drivers/noise; constrained in stockout weeks"
+Historical_Forecast_Tonnes,Illustrative prior weekly forecast,Tonnes/week,Synthetic,"Prior four-week mean plus 2% bias and forecast noise; first week 1,550 baseline"
+Price_PKR_per_Tonne,Undiscounted net selling-price proxy,PKR/tonne,Assumed/synthetic,"20,000 to 22,800 in four steps; excludes indirect taxes"
+Promo_Flag,Dealer incentive active,0/1,Synthetic,"34 of 156 weeks, selected independently of season"
+Promo_Depth,Discount during incentive,Percentage points,Synthetic,2%-5% when active; zero otherwise
+Event_Flag,Broad construction season,0/1,Assumed calendar rule,1 for March-June; not a Ramadan/Eid flag
+Construction_Activity_Index,Territory project-activity proxy,Index points,Synthetic,"Around 100; modest trend, seasonal component and independent noise"
+Monsoon_Flag,Illustrative slower building season,0/1,Assumed calendar rule,1 for July-September; not recorded weather observations
+Stockout_Flag,Supply/dispatch constrained sales,0/1,Synthetic,Five weeks; sales do not reveal unconstrained demand
+Exceptional_Event,One-off incident description,Text,Synthetic,"Four incidents, each one or two weeks; blank otherwise"

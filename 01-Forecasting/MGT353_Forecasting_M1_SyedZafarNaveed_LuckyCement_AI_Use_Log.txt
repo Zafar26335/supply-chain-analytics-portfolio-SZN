@@ -1,0 +1,27 @@
+Company-Calibrated Synthetic Dataset for Academic Analysis — illustrative figures, calibrated to Lucky Cement's disclosed scale, not actual company records.
+
+AI USE LOG | 5 OCTOBER 2026 | ChatGPT / Codex
+Student: Syed Zafar Naveed (filename identity taken from prior academic work; verify before submission).
+
+1. User instruction: "You are a data analyst and financial analyst. do this assignment step by step, keeping me in loop with everything you do"; later: "provide all the deliverables as well".
+2. AI read the teacher-provided assignment, extracted requirements and used its Section 4.2 master prompt. The filled prompt and product-specific addendum are supplied in Master_Prompt.txt. In this run the prompt was applied within the same AI session through a reproducible generator; it was not submitted to an unreported external model.
+3. Research tools: web search for Lucky Cement FY2026 reports, PSX disclosures and company product context. AI checked the unconsolidated net-revenue figure by subtraction. Detected shifted financial-table row labels; used the financial-performance summary and reconciliation. The full annual-report PDF was not accessible. Sources.csv records evidence.
+4. AI generated: decision scope, territory assumptions, dataset-generation Python, 156 synthetic weekly records, dictionary, assumption log and all analysis. Dataset is illustrative, not company records.
+5. Analytical instruction applied: fit five fixed time-series methods only on the first 144 weeks; forecast the last 12 without feeding actual holdout demand into recursive calculations; calculate MAD, MAPE, RMSE, WAPE, Bias, RSFE and Tracking Signal. No data/model retuning was performed after holdout. The seasonal model won on WAPE but was flagged for Tracking Signal outside +/-4.
+6. Regression instruction applied: use training demand and price, promo, event, construction activity, monsoon, stockout and time; report coefficients, standard errors, p-values, R-squared and adjusted R-squared. AI found weak price evidence and high time/price collinearity; did not recommend a price change. The interpretation is associative and synthetic, not real-company causality.
+7. Independent audit instruction applied: actively check dates, train/test isolation, recursive forecasting, metrics, five largest errors, coefficient plausibility and scenario stock flows. Audit used separate scalar-loop recalculation for all seven forecast metrics; stock-flow/financial identities and forecasts were reconciled. Fixed-plan shortage was corrected to incorporate lost dispatch capacity. No claim is made that a human independently verified these calculations.
+8. AI generated future refit forecasts, stress tests, dashboard, six-page storyboard, memo, validation note and executed notebook. Python used numpy/pandas/scipy/matplotlib/reportlab; no unavailable statsmodels package was silently claimed. Dashboard uses self-contained HTML/SVG/JavaScript with no external chart dependency.
+9. AI highlighted limitations: single holdout, already-breached monitoring threshold, latent demand censored by stockouts, synthetic embedded associations, uncalibrated risk band and assumed unit economics/response capacity.
+10. Student work still required before submission: read and explain the outputs; independently repeat at least three calculations in Excel/by hand using the worked metric sheet; review assumptions and identity; upload to LMS and the correct GitHub repository. Do not mark human verification complete until you have performed it.
+
+AUDIT PROMPT FROM THE ASSIGNMENT
+Act as an independent forecasting auditor. Do not assume my model is correct. Check date ordering, train/test separation, data leakage, recursive forecast logic, MAD, MAPE, RMSE, WAPE, Bias, RSFE, and Tracking Signal. Recalculate key values, identify the five largest misses, challenge implausible coefficients, and tell me what evidence would make you reject my managerial recommendation.
+
+SUMMARY OF CORRECTIONS
+- Interpreted reported revenue using reconciled financial summary, not shifted extracted rows.
+- Preserved the existing dataset when rerunning code; checked its SHA-256.
+- Defined forward bands as illustrative rather than assigning unjustified probabilities.
+- Corrected operational-constraint fixed-plan shortage to use capacity-limited supply.
+- Made operational release provisional because the holdout Tracking Signal already exceeded the assumed band.
+
+FINAL QA: Executed notebook has eight code cells and no error outputs. Dashboard JavaScript controls were executed in Node with DOM stubs and matched Python downside, event and capacity scenarios; SVG coordinates were finite. Full browser rendering was not verified because no browser executable was available. All PDF pages were rendered and visually inspected. The dataset disclosure column was added as metadata without changing demand/driver values, then the final file hash was recorded.
